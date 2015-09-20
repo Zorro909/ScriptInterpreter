@@ -25,7 +25,6 @@ public class ScriptInterpreter {
 	public static void main(String[] args)
 			throws ScriptException, IOException, IllegalArgumentException, IllegalAccessException {
 		getEngine();
-		addClassToScript("console", new Console());
 		addClassToScript("System", System.class);
 		System.out.println("Print JavaScript to execute it!");
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
